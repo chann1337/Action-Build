@@ -1004,12 +1004,6 @@ jobs:
           set_config "CONFIG_KSU=y"
           set_config "CONFIG_KSU_MULTI_MANAGER_SUPPORT=y"
           set_config "CONFIG_KSU_TOOLKIT_SUPPORT=y"
-          set_config "CONFIG_SYSVIPC=y"
-          set_config "CONFIG_IPC_NS=y"
-          set_config "CONFIG_PID_NS=y"
-          set_config "CONFIG_USER_NS=y"
-          set_config "CONFIG_CGROUP_PIDS=y"
-          set_config "CONFIG_CGROUP_DEVICE=y"
           if [[ -n "$KSU_CUSTOM_TAG" ]]; then
             set_config "CONFIG_KSU_FULL_NAME_FORMAT=\"%TAG_NAME%-${KSU_CUSTOM_TAG}@${KSU_BUILTIN_BRANCH}[%COMMIT_SHA%]\""
           fi
